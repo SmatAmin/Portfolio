@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aminu | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <i
+        class="fa fa-moon-o"
+        id="toggleIcon"
+        onclick="toggleDarkMode()"
+        title="Toggle dark mode"
+      ></i>
+    </div>
+
+    <nav class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#skills">Skills</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+    <header id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm Aminu</h1>
+    <p>Frontend Developer crafting responsive and clean digital experiences.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </div>
+</header>
+
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I enjoy building websites that are accessible, performant, and visually
+        appealing. I'm skilled in HTML, CSS, JavaScript, and love learning new
+        technologies.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <div class="card">
+      <i class="fa fa-cloud" aria-hidden="true" style="font-size: 32px; color: #04aa6d;"></i>
+      <h3>Weather App</h3>
+      <p>A minimal weather app using JavaScript and open APIs.</p>
+    </div>
+    <div class="card">
+      <i class="fa fa-laptop" aria-hidden="true" style="font-size: 32px; color: #04aa6d;"></i>
+      <h3>Portfolio Website</h3>
+      <p>This site! Designed and built by me using only frontend tools.</p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <i class="fa fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa fa-css3"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa fa-code"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa fa-git"></i>
+          <p>Git</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa fa-terminal"></i>
+          <p>Command Line</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa fa-globe"></i>
+          <p>Responsive Design</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="atsackey.st@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Aminu. All rights reserved.</p>
+    </footer>
+    <button onclick="scrollToTop()" id="topBtn" title="Go to top">
+      &#8679;
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
